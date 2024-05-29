@@ -2,14 +2,14 @@
   /* Fonts 
   */
   --font-main: "Verdana";
-  --font-heavy: "Arial";
+  --font-heavy: "Verdana";
 
 
   --black: #232f3e;
 
   /* neutrals */
-  --darksquidink: #161e2d;
-  --stone: #d4dada;
+  --darksquidink: #b27caf;
+  --stone: #5ca5a5;
   --paper: #f1f3f3;
   --white: #ffffff;
 
@@ -20,7 +20,7 @@
   --z-overlay: 1000;
 
   /* Color Variables */
-  --bg: var(--white);
+  --bg: var(--paper);
   --default: var(--black);
   --primary: var(--darksquidink);
 }
@@ -39,7 +39,7 @@ body {
   font-size: 18px;
   line-height: 1.5em;
   font-family: var(--font-main);
-  max-width: 600px;
+  max-width: 1000px;
 }
 
 .body-header {
@@ -51,7 +51,7 @@ body {
   font-family: var(--font-heavy);
   padding-top: 2rem;
   padding-bottom: 0.5rem;
-  max-width: 600px;
+  max-width: 1000px;
 }
 
 .centered {
