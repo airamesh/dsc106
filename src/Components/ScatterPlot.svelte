@@ -89,14 +89,15 @@
 <style>
 
 .tooltip {
-    position: absolute;
-    padding: 10px;
-    background: white;
-    border: 1px solid #ccc;
-    pointer-events: none;
-    z-index: 10;
-    white-space: pre-line;
-  }
+  position: absolute;
+  padding: 5px;
+  background: rgb(244, 226, 226);
+  border: 1px solid rgb(0, 0, 0);
+  pointer-events: none;
+  z-index: 100;
+  white-space: pre-line;
+  transform: translateX(-50%); 
+}
   .svg-container {
     display: flex;
     justify-content: center;
