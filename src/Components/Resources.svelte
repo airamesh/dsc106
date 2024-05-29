@@ -1,7 +1,7 @@
 <section id="resources">
-  <h3 class="body-header">References + Open Source</h3>
+  <h3 class="body-header">Sources Used</h3>
   <p class="body-text">
-    This article is a product of the following resources:
+    The following resources were used to generate the graphs. 
     <br /><br />
   </p>
   <div class="resource-list">
