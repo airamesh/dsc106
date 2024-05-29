@@ -6,20 +6,10 @@
   </p>
   <div class="resource-list">
     <p class="resource-item">
-      <a class="on-end" href="https://d3js.org/">D3.js</a>
-      <span>(Mike Bostock & Philippe Rivière)</span>
+      <a class="on-end" href="https://www.kaggle.com/datasets/mathchi/diabetes-data-set">Dataset Used</a>
     </p>
     <p class="resource-item">
-      <a class="on-end" href="https://layercake.graphics/">LayerCake</a>
-      <span>(Michael Keller)</span>
-    </p>
-    <p class="resource-item">
-      <a class="on-end" href="https://katex.org/">KaTeX</a>
-      <span>(Emily Eisenberg & Sophie Alpert)</span>
-    </p>
-    <p class="resource-item">
-      <a class="on-end" href="https://svelte.dev/">Svelte</a>
-      <span>(Rich Harris)</span>
+      <a class="on-end" href="https://gis.cdc.gov/grasp/diabetes/diabetesatlas-surveillance.html">CDC Diabetes Info</a>
     </p>
   </div>
 </section>
