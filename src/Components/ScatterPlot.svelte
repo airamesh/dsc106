@@ -34,6 +34,12 @@
   $: colorScale = d => +d.Outcome === 1 ? 'red' : 'blue';
 </script>
 
+<h1 class="body-header">Diabetes and Insulin</h1>
+<p class="body-text">
+  Insulin plays a crucial role in regulating blood sugar levels in the body. When we eat, our digestive system breaks down carbohydrates into glucose, which enters the bloodstream. In response, the pancreas releases insulin, a hormone that helps cells absorb glucose for energy or storage. <br>In individuals with diabetes, there are issues with insulin production or its effectiveness. In Type 1 diabetes, the pancreas produces little to no insulin due to autoimmune destruction of insulin-producing cells. In Type 2 diabetes, cells become resistant to insulin's effects, making it difficult for glucose to enter cells, and the pancreas may not produce enough insulin to compensate.
+  The 2-hour serum insulin test measures insulin levels in the blood two hours after a glucose challenge. <br>In individuals with diabetes, this test can indicate whether insulin production is inadequate or if cells are resistant to insulin, helping healthcare providers diagnose and manage the condition effectively.
+</p>
+
 <div class="svg-container">
   <svg width={width} height={height}>
     <!-- Manual x-axis -->
