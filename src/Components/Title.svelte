@@ -1,21 +1,18 @@
 <section id="intro">
-  <h1 id="intro-hed">Title Of The Article</h1>
-  <h1 class="intro-sub">Subtitle of the article.</h1>
-  <h3 id="intro__date">
-    <a href="https://twitter.com/" target="_blank">Author Name</a>, Month Year
-  </h3>
+  <h1 id="intro-hed">Exploring the Diabetes Epidemic</h1>
+  <h1 class="intro-sub">Megha Pareek & Aishwarya Ramesh</h1>
 </section>
 
 <style>
   #intro {
-    max-width: 600px;
+    max-width: 1000px;
     margin: 1rem auto;
     text-align: center;
     padding-top: 1rem;
   }
 
   #intro-hed {
-    font-size: 4rem;
+    font-size: 2rem;
     margin-top: 5px;
     margin-bottom: 0;
     letter-spacing: 1.5px;
@@ -31,7 +28,7 @@
     text-align: center;
     margin: 1rem;
     opacity: 0.75;
-    padding: 2rem;
+    padding: 1rem;
     font-family: var(--font-main);
   }
 
@@ -46,6 +43,11 @@
     padding-bottom: 1rem;
     font-family: var(--font-main);
   }
+  #intro {
+    padding: 2rem 1rem;
+    background-color: var(--primary);
+    color: white;
+  }
 
   /* mobile */
   @media screen and (max-width: 950px) {
@@ -56,5 +58,6 @@
     .intro-sub {
       font-size: 1.5rem;
     }
+
   }
 </style>

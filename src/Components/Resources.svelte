@@ -26,7 +26,7 @@
 
 <style>
   #resources {
-    padding: 2rem 1rem;
+    padding: 1rem 0.5rem;
     background-color: var(--primary);
     color: white;
   }

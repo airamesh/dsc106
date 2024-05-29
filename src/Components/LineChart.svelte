@@ -1,7 +1,7 @@
 <script>
   import { line, curveStep } from "d3-shape";
   import { scaleLinear } from "d3-scale";
-  import { errorData } from "../datasets.js";
+  import { diabetesData } from "../output.js";
   import { format } from "d3-format";
 
   const formatter = format(".0%");
@@ -37,10 +37,10 @@
     .curve(curveStep);
 </script>
 
-<h1 class="body-header">Responsive, Static Chart Example</h1>
+<h1 class="body-header">Diabetes and Insulin</h1>
 <p class="body-text">
-  This component is an example of a responsive chart built with Svelte and
-  D3.js.
+  Insulin plays a crucial role in regulating blood sugar levels in the body. When we eat, our digestive system breaks down carbohydrates into glucose, which enters the bloodstream. In response, the pancreas releases insulin, a hormone that helps cells absorb glucose for energy or storage. <br>In individuals with diabetes, there are issues with insulin production or its effectiveness. In Type 1 diabetes, the pancreas produces little to no insulin due to autoimmune destruction of insulin-producing cells. In Type 2 diabetes, cells become resistant to insulin's effects, making it difficult for glucose to enter cells, and the pancreas may not produce enough insulin to compensate.
+  The 2-hour serum insulin test measures insulin levels in the blood two hours after a glucose challenge. <br>In individuals with diabetes, this test can indicate whether insulin production is inadequate or if cells are resistant to insulin, helping healthcare providers diagnose and manage the condition effectively.
 </p>
 
 <div id="error-chart" bind:offsetWidth={width} bind:offsetHeight={height}>
@@ -124,10 +124,10 @@
 
 <style>
   #error-chart {
-    margin: auto;
+    margin: 2 auto;
     max-height: 55vh;
     width: 58%;
-    margin: 1rem auto;
+    margin: 3rem auto;
   }
 
   .error-axis-text {
