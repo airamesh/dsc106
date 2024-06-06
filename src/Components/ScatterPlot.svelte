@@ -1,16 +1,26 @@
 <script>
   import { scaleLinear } from 'd3-scale';
-  import { max } from 'd3-array';
+  import { max} from 'd3-array';
+  import { Delaunay } from 'd3-delaunay';
   import { diabetesData } from "../output.js";
 
-  let tooltip = { visible: false, text: '', x: 0, y: 0 };
+  let tooltip = { visible: false, text: '', x: '0px', y: '0px' };
+
+  // function showTooltip(event, data) {
+  //   tooltip = {
+  //     visible: true,
+  //     text: `${data.Outcome === '1' ? 'Diabetic' : 'Non-Diabetic'}\nInsulin: ${data.Insulin}\nGlucose: ${data.Glucose}`,
+  //     x: event.clientX , // Offset tooltip position to avoid cursor overlap
+  //     y: event.clientY
+  //   };
+  // }
 
   function showTooltip(event, data) {
     tooltip = {
       visible: true,
-      text: `${data.Outcome === '1' ? 'Diabetic' : 'Non-Diabetic'}\nInsulin: ${data.Insulin}\nGlucose: ${data.Glucose}`,
-      x: event.clientX , // Offset tooltip position to avoid cursor overlap
-      y: event.clientY
+      text: `Outcome: ${data.Outcome === '1' ? 'Diabetic' : 'Non-Diabetic'},  Insulin: ${data.Insulin} Glucose: ${data.Glucose}`,
+      x: `${event.pageX}px`,
+      y: `${event.pageY - 28}px`
     };
   }
 
@@ -23,15 +33,21 @@
   const margin = { top: 30, right: 30, bottom: 70, left: 80 }; 
 
   // Scales
-  $: glucoseScale = scaleLinear()
+  let glucoseScale = scaleLinear()
     .domain([0, max(diabetesData, d => +d.Glucose)])
     .range([margin.left, width - margin.right]);
 
-  $: insulinScale = scaleLinear()
+  let insulinScale = scaleLinear()
     .domain([0, max(diabetesData, d => +d.Insulin)])
     .range([height - margin.bottom, margin.top]);
 
-  $: colorScale = d => +d.Outcome === 1 ? 'red' : 'blue';
+  let delaunay = Delaunay.from(diabetesData, 
+    d => glucoseScale(d.Glucose), 
+    d => insulinScale(d.Insulin)
+  );
+  let voronoi = delaunay.voronoi([0, 0, width, height]);
+
+  let colorScale = d => +d.Outcome === 1 ? 'red' : 'blue';
 </script>
 
 <h1 class="body-header">Diabetes and Insulin</h1>
@@ -78,6 +94,7 @@
         on:mouseleave={hideTooltip}
       />
     {/each}
+
   </svg>
   {#if tooltip.visible}
     <div class="tooltip" style="left: {tooltip.x}px; top: {tooltip.y}px;">

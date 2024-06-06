@@ -143,17 +143,6 @@
     Outcome: "0"
   },
   {
-    Pregnancies: "1",
-    Glucose: "189",
-    BloodPressure: "60",
-    SkinThickness: "23",
-    Insulin: "846",
-    BMI: "30.1",
-    DiabetesPedigreeFunction: "0.398",
-    Age: "59",
-    Outcome: "1"
-  },
-  {
     Pregnancies: "5",
     Glucose: "166",
     BloodPressure: "72",

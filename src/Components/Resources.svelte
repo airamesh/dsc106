@@ -1,19 +1,20 @@
 <section id="resources">
-  <h3 class="body-header">Sources Used</h3>
-  <p class="body-text">
-    The following resources were used to generate the graphs. 
-    <br /><br />
-  </p>
-  <div class="resource-list">
-    <p class="resource-item">
-      <a class="on-end" href="https://www.kaggle.com/datasets/mathchi/diabetes-data-set">Dataset Used</a>
-    </p>
-    <p class="resource-item">
-      <a class="on-end" href="https://gis.cdc.gov/grasp/diabetes/diabetesatlas-surveillance.html">CDC Diabetes Info</a>
-    </p>
-  </div>
-</section>
-
+    <h3 class="body-header">Sources Used</h3>
+    <p class="body-text">
+      The following resources were used to generate the graphs. 
+    </p>
+    <div class="resource-list">
+      <p class="resource-item">
+        <a class="on-end" href="https://www.kaggle.com/datasets/mathchi/diabetes-data-set">Dataset Used</a>
+      </p>
+      <p class="resource-item">
+        <a class="on-end" href="https://gis.cdc.gov/grasp/diabetes/diabetesatlas-surveillance.html">CDC Diabetes Info</a>
+      </p>
+  <p class="resource-item">
+        <a class="on-end" href="https://www.premierintegratedlabs.com.my/types-of-diabetes-causes-risk-factors-and-symptoms/">Type of Diabetes Images</a>
+      </p>
+    </div>
+  </section>
 <style>
   #resources {
     padding: 1rem 0.5rem;
